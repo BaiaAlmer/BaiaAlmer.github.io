@@ -86,7 +86,7 @@ body {
 } 
 
 #home {
-  scroll-margin-top: 100px; /* Adjust this value based on your navbar's height */
+  scroll-margin-top: 100px; 
 }
 
 /* projects section styles */
@@ -199,6 +199,18 @@ body {
     font-weight: lighter; 
 } 
 
+.link2 { 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.25s; 
+    color: black; 
+    text-decoration: none;
+    font-size: 20px
+} 
+
+.link2:hover { 
+    border-bottom: 2px solid #007bff; 
+} 
+
 .links:hover { 
     border-bottom: 2px solid #fff; 
 } 
@@ -209,42 +221,6 @@ body {
     padding: 5px; 
     text-decoration: none; 
     color: #fff; 
-} 
-
-.btn { 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    letter-spacing: 1px; 
-    border: none; 
-} 
-
-.common-btn { 
-    background-color: #007bff; 
-    color: #fff; 
-    border: 2px solid #007bff; 
-    transition: all 0.25s; 
-} 
-
-.common-btn:hover { 
-    background-color: #fff; 
-    color: #007bff; 
-    border: 2px solid #007bff; 
-    outline: none; 
-} 
-
-.ghost-btn { 
-    background-color: #fff; 
-    color: #007bff; 
-    border: 2px solid #007bff; 
-    outline: none; 
-} 
-
-.ghost-btn:hover { 
-    background-color: #007bff; 
-    color: #fff; 
-    transition: all 0.25s; 
-    border: 2px solid #007bff; 
 } 
 
 .heading-span { 
