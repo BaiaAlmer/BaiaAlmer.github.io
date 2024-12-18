@@ -23,7 +23,7 @@
     <header class="header"> 
         <nav class="navbar"> 
             <div class="logo"> 
-                <h3 class="logo-heading">Baia Almer Winiarto</h3> 
+                <h3 class="logo-heading">Portfolio</h3> 
             </div> 
             <div class="hamburger" id="hamburger"> 
                 <i class="fas fa-bars hamburger-icon"></i> 
@@ -77,8 +77,8 @@
                         <p class="lead-para pt-2" style="text-align: justify;font-size: 18px;">
                           A fresh graduate of Bina Nusantara University. Junior software developer with experience in application 
                           and web development using Laravel and frontend programming. <br><br>I have worked with different teams through 
-                          projects that enhance user engagement and experience. I have a passion for computers since a young age 
-                          and therefore I’m always willing to learn, as well as open to feedback and suggestions.
+                          projects that enhance user engagement and experience. I have a passion for computers since a young age, 
+                          and I’m always willing to expand my knowledge, as well as being open to feedback and suggestions.
                         </p>
                       </div>
                 </div>
@@ -171,6 +171,12 @@
         </div> 
     </section>  -->
 
+     <!-- IMG MODAL -->
+     <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
     <!-- projects Section -->
     <section class="projects" id="projects"> 
         <div class="projects-heading"> 
@@ -182,16 +188,15 @@
                     <div class="row mb-2">
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/bloodtrapezaHome.png" target="_blank">
+                                <!-- <a href="asset/bloodtrapezaHome.png" target="_blank">
                                     <img src="asset/bloodtrapezaHome.png" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                                </a>
+                                </a> -->
+                                <img src="asset/bloodtrapezaHome.png" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/bloodtrapezaEvent.png" target="_blank">
-                                    <img src="asset/bloodtrapezaEvent.png" alt="Project Picture" style="border-radius: 2.5%;" height="250px" width="510px">
-                                </a>
+                                <img src="asset/bloodtrapezaEvent.png" onclick="openModal(this)" alt="Project Picture" style="border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                     </div>
@@ -206,16 +211,12 @@
                     <div class="row mb-2">
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/dotoHome.PNG" target="_blank">
-                                    <img src="asset/dotoHome.PNG" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                                </a>
+                                <img src="asset/dotoHome.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/dotoHeroes.PNG" target="_blank">
-                                    <img src="asset/dotoHeroes.PNG" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                                </a>
+                                <img src="asset/dotoHeroes.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                     </div>
@@ -230,16 +231,12 @@
                     <div class="row mb-2">
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/quixellShop.PNG" target="_blank">
-                                    <img src="asset/quixellShop.PNG" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                                </a>                            
+                                <img src="asset/quixellShop.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/quixellCart.PNG" target="_blank">
-                                    <img src="asset/quixellCart.PNG" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                                </a>
+                                <img src="asset/quixellCart.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                     </div>
@@ -254,16 +251,12 @@
                     <div class="row mb-2">
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/tictactoe1.PNG" target="_blank">
-                                    <img src="asset/tictactoe1.PNG" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                                </a>                            
+                                <img src="asset/tictactoe1.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                         <div class="col-6">
                             <div class="projectPicture"> 
-                                <a href="asset/tictactoe2.PNG" target="_blank">
-                                    <img src="asset/tictactoe2.PNG" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                                </a>
+                                <img src="asset/tictactoe2.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
                             </div> 
                         </div>
                     </div>
@@ -316,7 +309,7 @@
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"> 
     </script> 
-    <script src="script.js"></script> 
+    <script src="index.js"></script> 
 </body> 
 
 </html>

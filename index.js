@@ -1,19 +1,22 @@
-//index.js
+//MODAL SECTION
+// Open modal function
+function openModal(img) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
 
-const hamburger = document.getElementById('hamburger'); 
-const menu = document.querySelector('.menu'); 
+    modal.style.display = 'flex'; // Make the modal visible and centered
+    modalImg.src = img.src; // Set the modal image source
+}
 
-hamburger.addEventListener('click', function () { 
-    const hamIcon = this.querySelector('.hamburger-icon'); 
-    const crossIcon = this.querySelector('.cross-icon'); 
-    if (hamIcon.style.display === "none") { 
-        hamIcon.style.display = "inline-block"
-        menu.style.display = "none"
-        crossIcon.style.display = "none"
-    } 
-    else { 
-        crossIcon.style.display = "inline-block"
-        hamIcon.style.display = "none"
-        menu.style.display = "block"
-    } 
-});
+// Close modal function
+document.querySelector('.close').onclick = function () {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none'; // Hide the modal
+};
+
+// Close modal when clicking outside the image
+document.getElementById('imageModal').onclick = function (e) {
+    if (e.target === this) {
+        this.style.display = 'none'; // Hide the modal
+    }
+};
