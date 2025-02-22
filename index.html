@@ -1,307 +1,198 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0"> 
-    <title>Baia's Portfolio</title> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baia Winiarto</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link href="https://fonts.cdnfonts.com/css/martian-mono" rel="stylesheet">
     <link rel="stylesheet"
         href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity= "sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="responsive.css">
-    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
- 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body> 
-    <!-- Navbar -->
-    <header class="header"> 
-        <nav class="navbar fixed-top"> 
-            <div class="logo"> 
-                <h3 class="logo-heading">Portfolio</h3> 
-            </div> 
-            <div class="hamburger" id="hamburger"> 
-                <i class="fas fa-bars hamburger-icon"></i> 
-                <i class="fas fa-times cross-icon"></i> 
-            </div> 
-            <div class="menu" > 
-                <ul class="menu-list">
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#home"> 
-                            About 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#projects"> 
-                            Projects 
-                        </a> 
-                    </li> 
-                    <li class="menu-list-items"> 
-                        <a class="links" href="#contact"> 
-                            Contact Me 
-                        </a> 
-                    </li> 
-                </ul> 
-            </div> 
-        </nav> 
-    </header>
-    <section id="home">
-        <div class="container mt-5 pt-5">
-            <!-- Profile Picture and About Me Section -->
-            <div class="row align-items-center">
-              <!-- Profile Picture -->
-                <div class="col-md-4 text-center">
-                    <div class="profile-picture mb-4 mb-md-0">
-                    <img src="asset/selfi.JPG" alt="Profile Picture" style="box-shadow:0 0 15px black;max-width: 100%; border-radius: 5%; width: 100%; max-width: 300px; height: auto;">
-                </div>
-            </div>
-          
-              <!-- About Me -->
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="headings mb-2">
-                        <div class="d-flex">
-                          <h2 class="greet-heading">Hello, I'm <span style="font-size: xx-large; font-weight: bold;">Baia</span></h2>
-                        </div>
-                        <h2>from BINUS University</h2>
-                    </div>
-                    <div class="about-text" style="width: 70%;">
-                        <p class="lead-para pt-2">
-                          A fresh graduate of Bina Nusantara University. Junior software developer with experience in application 
-                          and web development using Laravel and frontend programming. <br><br>I have worked with different teams through 
-                          projects that enhance user engagement and experience. I have a passion for computers since a young age, 
-                          and I’m always willing to expand my knowledge, as well as being open to feedback and suggestions.
-                        </p>
-                      </div>
-                </div>
-                
-              </div>
-            </div>
+<body>
+    <div class="intro">
+        <img src="assets/plane.png" height="75px" alt="plane">
+        <div class="intro-text">
+            <h1>I'M BAIA</h1>
+            <h2>From BINUS UNIVERSITY</h2>
         </div>
-    </section>
-    
-    
-    <!-- Portfolio Section -->
-    <!-- <section class="portfolio bg-light" id="portfolio"> 
-        <div class="portfolio-heading"> 
-            <h1 class="my-heading text-center">Featured Portfolio</h1> 
-        </div> 
-        <div class="portfolio-content"> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/designImage2.avif"
-                                alt="Web Design Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">Web Design</h3> 
-                        <p class="small-para blue-text">Designing</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/webDevelopment2.avif"
-                                alt="Web Development Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Web Development 
-                        </h3> 
-                        <p class="small-para blue-text">Development</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/SEOImage2.avif" alt="SEO Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text">SEO</h3> 
-                        <p class="small-para blue-text">Optimization</p> 
-                    </div> 
-                </div> 
-            </div> 
-            <div class="my-row"> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/contentImage2.avif"
-                                alt="Content Writting Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Content Writing 
-                        </h3> 
-                        <p class="small-para blue-text">Writing</p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/wordpressImage2.avif"
-                                alt="Wordpress Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            WordPress Dev 
-                        </h3> 
-                        <p class="small-para blue-text"> 
-                            Content Management System 
-                        </p> 
-                    </div> 
-                </div> 
-                <div class="my-col"> 
-                    <div class="my-card port-card"> 
-                        <div class="image"> 
-                            <img src="./Images/videoEditing2.avif"
-                                alt="Video Editing Image"> 
-                        </div> 
-                        <h3 class="greet-heading blue-text"> 
-                            Video Editing 
-                        </h3> 
-                        <p class="small-para blue-text">Editing</p> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </section>  -->
-
-     <!-- IMG MODAL -->
-     <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
+        <img src="assets/eagle.png" height="105px" alt="eagle">
+        <img src="assets/tree.png"  height="400px" alt="tree">
     </div>
 
-    <!-- projects Section -->
-    <section class="projects" id="projects"> 
-        <div class="projects-heading"> 
-            <h1 class="my-heading text-center mt-3 fw-bold">My Projects</h1> 
-        </div> 
-        <div class="projects-content mt-3">
-            <div class="my-row"> 
-                <div class="my-card"> 
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/bloodtrapezaHome.png" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/bloodtrapezaEvent.png" onclick="openModal(this)" alt="Project Picture" style="border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                    </div>
-                    <h3 class="greet-heading fw-bold text-white">Bloodtrapeza</h3> 
-                    <p class="small-para w-75"> 
-                        Bloodtrapeza is my final project in university with two of my friends. We created a website that can help people find blood donor events and locations. The goal of the project was to create a platform that will make it easier for donors and the people in need to find donor locations. We used Laravel as the main framework and languages such as PHP, HTML, CSS, and bits of Javascript.    
-                    </p> 
-                </div> 
-            </div>
-            <div class="my-row"> 
-                <div class="my-card"> 
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/dotoHome.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/dotoHeroes.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                    </div>
-                    <h3 class="greet-heading fw-bold text-white">Doto</h3> 
-                    <p class="small-para w-75"> 
-                        Doto is my final group project of Human and Computer Interaction subject during my 2nd Semester of University. Which the two of my friends and myself created a website using HTML, CSS, javascript and Photoshop that contains all you need to know about a fictional game called Doto, such as it's game mechanics, it's heroes, and merchandise.
-                    </p> 
-                </div> 
-            </div> 
-            <div class="my-row"> 
-                <div class="my-card"> 
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/quixellShop.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/quixellCart.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                    </div>
-                    <h3 class="greet-heading fw-bold text-white">Quixell</h3> 
-                    <p class="small-para w-75"> 
-                        Quixell is my final project during my course of studying Web Programming subject. I was given a task to create an E-Commerce website that sells clothing items, and is provided with an item cart and item checkout feature. The framework used for this project is Laravel, with programming languages such as HTML, CSS, and PHP. 
-                    </p> 
-                </div> 
-            </div> 
-            <div class="my-row"> 
-                <div class="my-card"> 
-                    <div class="row mb-2">
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/tictactoe1.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                        <div class="col-6">
-                            <div class="projectPicture"> 
-                                <img src="asset/tictactoe2.PNG" onclick="openModal(this)" alt="Project Picture" style=" border-radius: 2.5%;" height="250px" width="510px">
-                            </div> 
-                        </div>
-                    </div>
-                    <h3 class="greet-heading fw-bold text-white">Tic Tac Toe Game</h3> 
-                    <p class="small-para w-75"> 
-                        A group project that myself and my other two friends made during our study on Artificial Intelligence subject. Which requires us to create an App that has any form of Artificial Intelligence implemented to it. We decided to create a Tic Tac Toe Game as AI plays a role as the unbeatable opponent. We used HTML, javascript, and CSS to create our game.    
-                    </p> 
-                </div> 
-            </div> 
-        </div> 
-    </section> 
-
-    <section id="contact" style="font-family: 'Source Sans Pro'; padding: 20px;margin-top: -5%;">
-        <h1 class="fw-bold" style="text-align: center; color: black;margin-bottom: 2%;">Contact Me</h1>
-        <div style="max-width: 600px; margin: 20px auto; ">
-          
-            <ul style="list-style: none; padding: 0; margin-left: 25%; text-align: left;">
-                <li style="margin: 10px 0;">
-                    <i class="fas fa-envelope" style="margin-right: 10px; font-size: 24px;color: #007BFF;"></i>
-                    <a class="link2" href="mailto:jwzbbrothers@gmail.com" >jwzbbrothers@gmail.com</a>
-                  </li>
-                  <li style="margin: 10px 0;">
-                    <i class="fab fa-whatsapp-square" style=" margin-right: 10px;font-size: 24px;color: #007BFF;"></i>
-                    <a class="link2" href="https://wa.me/6281316789131" >+62 81316789131</a>
-                  </li>
-                  <li style="margin: 10px 0;">
-                    <i class="fab fa-linkedin" style=" margin-right: 10px;font-size: 24px;color: #007BFF;"></i>
-                    <a class="link2" href="https://www.linkedin.com/in/baia-almer-winiarto-5100b1253/" target="_blank">linkedin.com/in/baia-almer-winiarto</a>
-                  </li>
-                  <li style="margin: 10px 0;">
-                    <i class="fab fa-instagram" style=" margin-right: 10px;font-size: 24px;color: #007BFF;"></i>
-                    <a class="link2" href="https://www.instagram.com/baiaalmer" target="_blank">@baiaalmer</a>
-                  </li>
-            </ul>
+    <div class="hero">
+        <img class="pasfoto" src="assets/foto.JPG" alt="pasfoto">
+        <h1 class="hero-header">Hello</h1>
+        <div class="hero-paragraph">
+          <p>I'm a freshgraduate of Computer Science Major, I studied Software Engineering and aspire to become a Web Developer</p>
         </div>
-    </section>    
-    
+    </div>
 
-    <!-- Footer section -->
-    <footer class="footer"> 
-        <div class="footer-content text-center">
-            <div class="social-links"> 
-                <div class="footer-menu"> 
-                    <h4>Baia Almer Winiarto</h4>
-                </div> 
+    <div class="about">
+      <div class="about-container"> 
+        <div class="about-card">
+          <div class="about-para"> 
+            <h2>About</h2> 
+            <p>A fresh graduate of Bina Nusantara University. Junior software developer with experience in application and web development using Laravel and frontend programming.</p> 
+            <p>I have worked with different teams through projects that enhance user engagement and experience. I have a passion for computers since a young age, and I’m always willing to expand my knowledge, as well as being open to feedback and suggestions.</p>
+          </div> 
+          <div class="about-details">
+            <h2>Basic Information</h2>
+            <div class="about-list">
+              <p><span style="font-weight: bolder;">INTERESTS:</span> Sports, Information Technology, Music</p>
+              <p><span style="font-weight: bolder;">LANGUAGES:</span> Bahasa Indonesia, English</p>
+              <p><span style="font-weight: bolder;">LOCATION:</span> Depok, West Java, Indonesia</p>
+
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="resume">
+      <div class="resume-container">
+        <hr>
+        <div class="education">
+          <div class="education-header">
+            <h2>Education</h2>
+          </div>
+          <div class="experience-list">
+            <div class="job">
+              <div class="job-grid">
+                <h2>SMA Islam Dian Didaktika</h2>
+                <h4>2017 - 2020</h4>
+              </div>
+              <h3>Science Major</h3>
+              <p>Participated in a Musical Ansamble for High School Anniversary as a guitar player.</p>
+              <p>Member of the Core Logistics Division on the 2019 HighSchool annual event.</p>
+            </div>
+            <hr>
+
+            <div class="job">
+              <div class="job-grid">
+                <h2>BINUS University</h2>
+                <h4>2020 - 2024</h4>
+              </div>
+              <h3>Computer Science Major - <span style="font-weight: 900; font-size: larger;">3.23 GPA</span></h3>
+              <p>Participated in a Community Service event named "Kegiatan Sosialisasi Anti Korupsi"</p>
+              <p>Participated in a Community Service event called "Pengaruh Kenaikan Permukaan Air Laut Terhadap Lingkungan Hidup"</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="experience">
+          <div class="experience-header">
+            <h2>Experience</h2>
+          </div>
+          <div class="experience-list">
+            <div class="job">
+              <div class="job-grid">
+                <h2>PT. Stabil Standar Sinergi</h2>
+                <h4>February 2023 - August 2023</h4>
+              </div>
+              <h3>Application Developer</h3>
+              <p>Participated as a Frontend Developer for a project named Storemanager. Using GitHub to develop the user interfacewith HTML, CSS, and Javascript languages for better userexperience.</p>
+            </div>
+            <hr>
+            
+            <div class="job">
+              <div class="job-grid">
+                <h2>KL Klinik</h2>
+                <h4>September 2023 - February 2024</h4>
+              </div>
+              <h3>Programmer</h3>
+              <p>Participated in the frontend and backend development aswell as maintenance of the internal application/web that is used by employees and doctors for clinic operations purporses.</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="skills">
+          <div class="skills-header">
+            <h2>Skills</h2>
+          </div>
+          <div class="skills-list">
+            <div class="skills-grid">
+              <h4>HTML</h4>
+              <h4>PHP</h4>
+              <h4>Photoshop</h4>
+            </div>
+            <hr>
+            <div class="skills-grid">
+              <h4>CSS</h4>
+              <h4>Boostrap</h4>
+              <h4>Laravel</h4>
+            </div>
+            <hr>
+            <div class="skills-grid">
+              <h4>Javascript</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project"> 
+      <div class="project-heading"> 
+          <h1>My Projects</h1> 
+      </div> 
+      <div class="project-container"> 
+          <div class="project-card"> 
+              <div class="project-image"> 
+                  <img src="assets/bloodtrapezaEvent.png" alt="bloodtrapeza"> 
+              </div> 
+              <div class="project-text">
+                <h2>Bloodtrapeza</h2> 
+                <p >Bloodtrapeza is my final project in university with two of my friends. We created a website that can help people find blood donor events and locations. The goal of the project was to create a platform that will make it easier for donors and the people in need to find donor locations. We used Laravel as the main framework and languages such as PHP, HTML, CSS, and bits of Javascript.</p> 
+              </div>
+          </div> 
+          <div class="project-card"> 
+            <div class="project-image"> 
+                <img src="assets/dotoHome.PNG" alt="doto"> 
             </div> 
-        </div> 
-    </footer> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <div class="project-text">
+              <h2>Doto</h2> 
+              <p>Doto is my final group project of Human and Computer Interaction subject during my 2nd Semester of University. Which the two of my friends and myself created a website using HTML, CSS, javascript and Photoshop that contains all you need to know about a fictional game called Doto, such as it's game mechanics, it's heroes, and merchandise.
+              </p>
+            </div>
+          </div> 
+          <div class="project-card"> 
+            <div class="project-image"> 
+                <img src="assets/quixellShop.PNG" alt="quixell"> 
+            </div> 
+            <div class="project-text">
+              <h2>Quixell</h2> 
+              <p>Quixell is my final project during my course of studying Web Programming subject. I was given a task to create an E-Commerce website that sells clothing items, and is provided with an item cart and item checkout feature. The framework used for this project is Laravel, with programming languages such as HTML, CSS, and PHP.
+              </p>
+            </div>
+          </div> 
+          <div class="project-card"> 
+            <div class="project-image"> 
+                <img src="assets/tictactoe2.PNG" alt="tictactoe"> 
+            </div> 
+            <div class="project-text">
+              <h2>Tic Tac Toe Game</h2> 
+              <p>A group project that myself and my other two friends made during our study on Artificial Intelligence subject. Which requires us to create an App that has any form of Artificial Intelligence implemented to it. We decided to create a Tic Tac Toe Game as AI plays a role as the unbeatable opponent. We used HTML, javascript, and CSS to create our game.
+              </p>
+            </div>
+          </div> 
+      </div> 
+    </div> 
 
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"> 
-    </script> 
-    <script src="index.js"></script> 
-</body> 
+    <footer>
+      <div class="nav">
+        <div><a class="nav-link" href="mailto:jwzbbrothers@gmail.com" ><i class="fas fa-envelope"></i>Email</a></div>
+        <div><a class="nav-link" href="https://wa.me/6281316789131" ><i class="fab fa-whatsapp-square"></i>Whatsapp</a></div>
+        <div><a class="nav-link" href="https://www.linkedin.com/in/baia-almer-winiarto-5100b1253/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></div>
+        <div><a class="nav-link" href="https://www.instagram.com/baiaalmer" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></div>
+      </div>
+      <hr style="width: 808px;">
+      <p class="footer-name">© 2025 Baia Almer Winiarto</p>
+    </footer>
 
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+</body>
 </html>
