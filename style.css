@@ -509,6 +509,7 @@ footer{
 
             .project-container{
                 margin-top: 25px;
+                max-width: 350px;
             }
 
             .project-heading{
@@ -522,7 +523,6 @@ footer{
             }
 
             .project-card{
-                width: 350px;
                 height: max-content;
                 flex-direction: column;
                 font-size: xx-small;
@@ -555,6 +555,7 @@ footer{
                 flex-basis: 35px;
             }
     }
+
     @media (max-width: 576px){
         .intro{
             margin-top: -7%;
@@ -609,7 +610,7 @@ footer{
 
             .about-container{
                 padding: 40px 0px 20px 0px;
-                max-width: 556px;
+                max-width: 350px;
             }
         
             .about-card{
@@ -656,6 +657,7 @@ footer{
 
             .project-container{
                 margin-top: 25px;
+                max-width: 350px;
             }
 
             .project-heading{
