@@ -480,6 +480,11 @@ footer{
 
             .education-header>h2,.experience-header>h2{
                 font-size: 190%;
+                text-decoration: underline;
+            }
+
+            .skills-header{
+                text-decoration: underline;
             }
 
             .education-header,.experience-header{
@@ -509,7 +514,7 @@ footer{
 
             .project-container{
                 margin-top: 25px;
-                max-width: 350px;
+                max-width: 550px;
             }
 
             .project-heading{
@@ -518,7 +523,7 @@ footer{
 
             .project-image>img{
                 height: max-content;
-                width: 350px;
+                width: 100%;
                 border-bottom: solid 1px #a3a3a3;
             }
 
