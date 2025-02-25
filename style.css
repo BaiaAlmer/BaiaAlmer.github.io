@@ -510,7 +510,6 @@ footer{
             }
 
             .project-card{
-                height: max-content;
                 flex-direction: column;
                 font-size: xx-small;
             }
@@ -553,7 +552,6 @@ footer{
         }
 
             .project-image>img{
-                height: max-content;
                 width: 350px;
             }
         
