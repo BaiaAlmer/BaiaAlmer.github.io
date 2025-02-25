@@ -123,6 +123,10 @@ body {
 
 .project{
     margin: 50px 0px 70px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
     .project-heading{  
@@ -132,16 +136,16 @@ body {
 
     .project-container{
         margin-top: 50px;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        justify-self: center;
+        justify-self: center; */
         max-width: 1140px;
     }
 
     .project-card{
         display: flex;
         height: 300px;
-        justify-self: center;
+        /* justify-self: center; */
         box-shadow: 0px 0px 20px 0px;
         margin-bottom: 50px;
     }
