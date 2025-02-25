@@ -504,12 +504,12 @@ footer{
             }
 
             .project-image>img{
-                height: max-content;
                 width: 100%;
                 border-bottom: solid 1px #a3a3a3;
             }
 
             .project-card{
+                height: max-content;
                 flex-direction: column;
                 font-size: xx-small;
             }
