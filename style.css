@@ -312,56 +312,45 @@ footer{
 
     @media (max-width: 992px) {
        
-        .intro{
-            margin-top: -5%;
+        .intro-text>h1{
+            font-size: 2.5rem;
         }
-            .intro-text>h1{
-                font-size: 2.5rem;
-                padding-top: 13%;
-            }
             .intro-text>h2{
                 font-size: 1.0rem;
             }
         
             img[alt="plane"]{
-                right: 200px;
                 top: 25px;
                 height: 55px;
             }
         
             img[alt="eagle"]{
-                left: 150px;
                 top: 250px;
                 height: 55px;
             }
         
             img[alt="tree"]{
-                margin-left: 65%;
                 height: 250px;
             }
 
         .hero-paragraph{
-            font-size: small;
-        }
-
-        .hero-paragraph>p{
-            width: 60%;
-        }
-
-        img.pasfoto{
-            height: 180px;
-            width: 180px;
-        }
-
-        .about{
-            font-size: x-small;
-        }
-
-            .about-container{
-                padding: 80px 0px 40px 0px;
-                max-width: 720px;
+                font-size: small;
             }
-        
+
+            .hero-paragraph>p{
+                width: 60%;
+            }
+
+            img.pasfoto{
+                height: 180px;
+                width: 180px;
+            }
+
+        .about-container{
+            padding: 80px 0px 40px 0px;
+            max-width: 720px;
+        }
+    
             .about-card{
                 padding: 15px 10px 15px 10px;
             }
@@ -385,16 +374,14 @@ footer{
         }
 
         .project-image>img{
-            height: 200px;
             width: 350px;
         }
             .project-container{
                 max-width: 720px;
             }
 
-            .project-text>p{
+            .project-text>h2{
                 margin-top: 20px;
-                margin-right: 10px;
             }
 
             .project-heading{
@@ -414,7 +401,6 @@ footer{
         }
             .intro-text>h1{
                 font-size: 1.5rem;
-                padding-top: 13%;
             }
             .intro-text>h2{
                 font-size: 0.5rem;
@@ -433,7 +419,6 @@ footer{
             }
         
             img[alt="tree"]{
-                margin-left: 65%;
                 height: 150px;
             }
 
@@ -504,18 +489,11 @@ footer{
             .job{
                 margin-bottom: 0px;
             }
-            .job>p {
-                margin: 0 0 25px 0;
-            }
-
-        .project{
-            margin: 20px 0 70px 0;
+        
+        .project-container{
+            margin-top: 25px;
+            max-width: 550px;
         }
-
-            .project-container{
-                margin-top: 25px;
-                max-width: 550px;
-            }
 
             .project-heading{
                 font-size: x-small;
@@ -561,150 +539,21 @@ footer{
     }
 
     @media (max-width: 576px){
-        .intro{
-            margin-top: -7%;
-        }
-            .intro-text>h1{
-                font-size: 1.5rem;
-                padding-top: 13%;
-            }
-            .intro-text>h2{
-                font-size: 0.5rem;
-            }
-        
-            img[alt="plane"]{
-                right: 100px;
-                top: 25px;
-                height: 25px;
-            }
-        
-            img[alt="eagle"]{
-                left: 100px;
-                top: 150px;
-                height: 25px;
-            }
-        
-            img[alt="tree"]{
-                margin-left: 65%;
-                height: 150px;
-            }
 
-        .hero-paragraph{
-            font-size: xx-small;
+        .about-container{
+            max-width: 350px;
         }
 
-            .hero-paragraph>p{
-                margin: 15px 0 15px 0;
-                width: 60%;
-            }
-
-            img.pasfoto{
-                margin: 50px 0 10px 0;
-                height: 90px;
-                width: 90px;
-            }
-
-            .hero-header{
-                font-size: larger;
-            }
-
-        .about{
-            font-size: xx-small;
+        .project-container{
+            max-width: 350px;
         }
-
-            .about-container{
-                padding: 40px 0px 20px 0px;
-                max-width: 350px;
-            }
-        
-            .about-card{
-                padding: 7px 10px 7px 10px;
-                flex-direction: column;
-            }
-
-            .about-para{
-                width: 100%;
-            }
-
-        .resume{
-            font-size: 47%;
-        }
-
-            .education-header>h2,.experience-header>h2{
-                font-size: 190%;
-            }
-
-            .education-header,.experience-header{
-                margin-bottom: 50px;
-            }
-
-            .education{
-                grid-template-rows: 10% 90%;
-                grid-template-columns: 100%;
-            }
-
-            .experience{
-                grid-template-rows: 10% 90%;
-                grid-template-columns: 100%;
-            }
-
-            .job{
-                margin-bottom: 0px;
-            }
-            .job>p {
-                margin: 0 0 25px 0;
-            }
-
-        .project{
-            margin: 20px 0 70px 0;
-        }
-
-            .project-container{
-                margin-top: 25px;
-                max-width: 350px;
-            }
-
-            .project-heading{
-                font-size: x-small;
-            }
 
             .project-image>img{
                 height: max-content;
                 width: 350px;
-                border-bottom: solid 1px #a3a3a3;
-            }
-
-            .project-card{
-                width: 350px;
-                height: max-content;
-                flex-direction: column;
-                font-size: xx-small;
-            }
-
-            .project-text>p{
-                margin-top: 5px;
-                margin-right: 10px;
             }
         
-        footer{
-            font-size: 50%;
+        div.nav>div {
+            flex-basis: 35px;
         }
-            .fab{
-                font-size: 20px;
-                margin-left: 15px;
-            }
-
-            .fas{
-                font-size: 20px;
-                margin-left: 5px;
-            }
-
-            .footer-line{
-                width:300px;
-            }
-
-            div.nav>div {
-                margin: 10px 0px 10px 25px;
-                flex-basis: 35px;
-            }
     }
