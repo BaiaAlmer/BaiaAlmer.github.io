@@ -141,8 +141,11 @@
       </div> 
       <div class="project-container"> 
           <div class="project-card"> 
-              <div class="project-image"> 
-                  <img src="assets/bloodtrapezaEvent.png" alt="bloodtrapeza"> 
+              <div class="project-image carousel"> 
+                  <img src="assets/bloodtrapezaEvent.png" alt="bloodtrapeza" class="carousel-image active"> 
+                  <img src="assets/bloodtrapezaHome.png" alt="bloodtrapeza" class="carousel-image"> 
+                  <button class="carousel-button prev" onclick="prevSlide(this)">❮</button>
+                  <button class="carousel-button next" onclick="nextSlide(this)">❯</button>
               </div> 
               <div class="project-text">
                 <h2>Bloodtrapeza</h2> 
@@ -150,8 +153,14 @@
               </div>
           </div> 
           <div class="project-card"> 
-            <div class="project-image"> 
-                <img src="assets/dotoHome.PNG" alt="doto"> 
+            <div class="project-image carousel"> 
+                <img src="assets/dotoHome.PNG" alt="doto" class="carousel-image active"> 
+                <img src="assets/dotoHeroes.PNG" alt="doto" class="carousel-image"> 
+                <img src="assets/dotoMech.png" alt="doto" class="carousel-image"> 
+                <img src="assets/dotoMerch.png" alt="doto" class="carousel-image"> 
+
+                <button class="carousel-button prev" onclick="prevSlide(this)">❮</button>
+                <button class="carousel-button next" onclick="nextSlide(this)">❯</button>
             </div> 
             <div class="project-text">
               <h2>Doto</h2> 
@@ -160,8 +169,11 @@
             </div>
           </div> 
           <div class="project-card"> 
-            <div class="project-image"> 
-                <img src="assets/quixellShop.PNG" alt="quixell"> 
+            <div class="project-image carousel"> 
+                <img src="assets/quixellShop.PNG" alt="quixell" class="carousel-image active"> 
+                <img src="assets/quixellCart.PNG" alt="quixellCart" class="carousel-image">
+                <button class="carousel-button prev" onclick="prevSlide(this)">❮</button>
+                <button class="carousel-button next" onclick="nextSlide(this)">❯</button>
             </div> 
             <div class="project-text">
               <h2>Quixell</h2> 
@@ -169,16 +181,6 @@
               </p>
             </div>
           </div> 
-          <!-- <div class="project-card"> 
-            <div class="project-image"> 
-                <img src="assets/tictactoe2.PNG" alt="tictactoe"> 
-            </div> 
-            <div class="project-text">
-              <h2>Tic Tac Toe Game</h2> 
-              <p>A group project that myself and my other two friends made during our study on Artificial Intelligence subject. Which requires us to create an Web App that has any form of Artificial Intelligence implemented to it. We decided to create a Tic Tac Toe Game as AI plays a role as the unbeatable opponent. We used HTML, javascript, and CSS to create our game.
-              </p>
-            </div>
-          </div>  -->
           <div class="project-card"> 
             <div class="project-image"> 
                 <img src="assets/virtualDrum.PNG" alt="virtualdrum"> 
@@ -186,6 +188,21 @@
             <div class="project-text">
               <h2>Virtual Drum Kit</h2> 
               <p>A small web project that uses javascript querying and implementing functions that plays audio files of drums upon pressing HTML buttons on screen and pressing keys on the keyboard. The buttons were given pictures of actual drums as their background image to simulate an actual drum kit.
+              </p>
+            </div>
+          </div> 
+          <div class="project-card"> 
+            <div class="project-image carousel">
+              <img src="assets/webblogapp1.png" alt="webblogapp" class="carousel-image active"> 
+              <img src="assets/webblogapp4.png" alt="webblogapp4" class="carousel-image">
+              <img src="assets/webblogapp2.png" alt="webblogapp2" class="carousel-image">
+              <img src="assets/webblogapp3.png" alt="webblogapp3" class="carousel-image">
+              <button class="carousel-button prev" onclick="prevSlide(this)">❮</button>
+              <button class="carousel-button next" onclick="nextSlide(this)">❯</button>
+            </div> 
+            <div class="project-text">
+              <h2>Web Blog App</h2> 
+              <p>One of my projects from a Web Development Course. I developed a prototype web blog application that enables users to read and create blog posts. They can also have the ability to edit and delete them. I developed the web using Node.js as the runtime, and Express.js as the framework and also used EJS as the Javascript template. The frontend parts of the website was written in HTML and CSS. 
               </p>
             </div>
           </div> 
@@ -203,7 +220,26 @@
       <p class="footer-name">© 2025 Baia Almer Winiarto</p>
     </footer>
 
-
+    <script>
+      function nextSlide(button) {
+        const carousel = button.closest('.carousel');
+        const images = carousel.querySelectorAll('.carousel-image');
+        let current = Array.from(images).findIndex(img => img.classList.contains('active'));
+        images[current].classList.remove('active');
+        const next = (current + 1) % images.length;
+        images[next].classList.add('active');
+      }
+      
+      function prevSlide(button) {
+        const carousel = button.closest('.carousel');
+        const images = carousel.querySelectorAll('.carousel-image');
+        let current = Array.from(images).findIndex(img => img.classList.contains('active'));
+        images[current].classList.remove('active');
+        const prev = (current - 1 + images.length) % images.length;
+        images[prev].classList.add('active');
+      }
+      </script>
+      
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </body>
 </html>

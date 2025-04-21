@@ -113,7 +113,8 @@ body {
     }
 
     .skills-grid{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .skills-grid>h4{
@@ -158,11 +159,11 @@ body {
 
     .project-text{
         margin-left: 20px;
+        width: 519.2px;
     }
 
     .project-text>p{
-        margin-top: 50px;
-        margin-right: 10px;
+        margin: 20px 20px 20px 0;
         text-wrap: pretty;
     }
 
@@ -178,7 +179,7 @@ body {
     }
 
     .about-card{
-        padding: 25px 0px 25px 0px;
+        padding: 25px 10px 25px 10px;
         display: flex;
         justify-self: center;
         justify-content: space-evenly;
@@ -229,6 +230,43 @@ footer{
         width: 808px;
     }
 
+    .carousel {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .carousel-image {
+        width: 100%;
+        display: none;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .carousel-image.active {
+        display: block;
+      }
+      
+      .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: rgb(132, 132, 132);
+        border: none;
+        padding: 0.5em;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .carousel-button.prev {
+        left: 0px;
+      }
+      
+      .carousel-button.next {
+        right: 1px;
+      }
+      
+
     @media (max-width: 1200px) {
        
         .intro{
@@ -264,7 +302,7 @@ footer{
             }
         
             .about-card{
-                padding: 25px 10px 25px 10px;
+                padding: 25px 0px 25px 0px;
             }
 
         .resume{
@@ -289,6 +327,10 @@ footer{
             .project-card{
                 height: 200px;
                 font-size: small;
+            }
+
+            .project-text{
+                width: 489.47px;
             }
 
             .project-text>p{
@@ -390,6 +432,10 @@ footer{
 
             .project-heading{
                 font-size: smaller;
+            }
+
+            .project-text{
+                width: 349.09px;
             }
 
             .project-card{
@@ -514,9 +560,14 @@ footer{
                 font-size: xx-small;
             }
 
+            .project-text{
+                width: 489.46px;
+            }
+
             .project-text>p{
                 margin-top: 5px;
                 margin-right: 10px;
+                padding-right: 20px;
             }
         
         footer{
@@ -554,6 +605,10 @@ footer{
             .project-image>img{
                 width: 350px;
             }
+        
+        .project-text{
+            width: 350px;
+        }
         
         div.nav>div {
             flex-basis: 35px;
