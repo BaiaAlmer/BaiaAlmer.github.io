@@ -36,7 +36,7 @@
         <div class="about-card">
           <div class="about-para"> 
             <h2>About</h2> 
-            <p>A fresh graduate of Bina Nusantara University. Junior software developer with experience in application and web development using Laravel and frontend programming.</p> 
+            <p>A fresh graduate of Bina Nusantara University. Junior software developer with experience in Frontend Web and Application Development.</p> 
             <p>I have worked with different teams through projects that enhance user engagement and experience. I have a passion for Information Technology, and I’m always willing to expand my knowledge, as well as being open to feedback and suggestions.</p>
           </div> 
           <div class="about-details">
@@ -218,28 +218,10 @@
         <div><a class="nav-link" href="https://www.instagram.com/baiaalmer" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></div>
       </div>
       <hr class="footer-line">
-      <p class="footer-name">© 2025 Baia Almer Winiarto</p>
+      <p class="footer-name" id="footerYear"></p>
     </footer>
 
-    <script>
-      function nextSlide(button) {
-        const carousel = button.closest('.carousel');
-        const images = carousel.querySelectorAll('.carousel-image');
-        let current = Array.from(images).findIndex(img => img.classList.contains('active'));
-        images[current].classList.remove('active');
-        const next = (current + 1) % images.length;
-        images[next].classList.add('active');
-      }
-      
-      function prevSlide(button) {
-        const carousel = button.closest('.carousel');
-        const images = carousel.querySelectorAll('.carousel-image');
-        let current = Array.from(images).findIndex(img => img.classList.contains('active'));
-        images[current].classList.remove('active');
-        const prev = (current - 1 + images.length) % images.length;
-        images[prev].classList.add('active');
-      }
-      </script>
+    <script src="index.js"></script>
       
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </body>
